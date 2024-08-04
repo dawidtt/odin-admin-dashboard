@@ -109,7 +109,7 @@ img {
 }
 html {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: calc(10px + 0.5vw);
 }
 /* common styles */
 .small-avatar {
@@ -206,8 +206,15 @@ header {
   border: none;
   width: 150px;
   height: 50px;
-  background-color: #0ea5e9;
+  background-color: #0ea4e9ce;
   color: white;
+  transition: background-color 0.3s ease;
+  transition: box-shadow 0.3s ease;
+}
+#header-bottom-right button:hover {
+  box-shadow: 0 4px 6px 1px #6cc6f05e;
+  background-color: #0ea5e9;
+  cursor: pointer;
 }
 #sidebar {
   grid-row: 1 / 3;
