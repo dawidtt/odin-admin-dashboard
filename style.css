@@ -258,4 +258,6 @@ header {
   font-weight: 700;
 }
 main {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr;
 }
